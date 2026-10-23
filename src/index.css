@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 深色主题基础样式 */
+html {
+  scroll-behavior: smooth; /* 平滑滚动 */
+}
+
+body {
+  @apply bg-base text-white font-sans antialiased;
+  margin: 0;
+}
