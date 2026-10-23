@@ -1,3 +1,7 @@
+// 通过 import 引入头像，构建时由 Vite 处理资源并输出带 hash 的 URL，
+// 避免硬编码 /src/... 路径在构建产物（dist）中失效导致部署后无法访问
+import avatarImage from '../assets/images/head.png'
+
 // 首页 Hero 区块：大标题 + 简介 + 头像（深色主题 + 渐变色）
 interface HeroProps {
   /** 头像地址，默认使用占位图 */
@@ -9,7 +13,7 @@ interface HeroProps {
 }
 
 export default function Hero({
-  avatarSrc = '/src/assets/images/head.png',
+  avatarSrc = avatarImage,
   name = '你好，我是 XXX',
   intro = '一名开发者，专注于构建简洁、现代且流畅的 Web 体验。',
 }: HeroProps) {
