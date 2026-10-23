@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export default function Hero({
-  avatarSrc = 'https://via.placeholder.com/160',
+  avatarSrc = '/src/assets/images/head.png',
   name = '你好，我是 XXX',
   intro = '一名开发者，专注于构建简洁、现代且流畅的 Web 体验。',
 }: HeroProps) {

@@ -6,14 +6,14 @@ export default function Contact() {
       <ul className="space-y-3 text-white/70">
         <li>
           邮箱：
-          <a href="mailto:you@example.com" className="text-accent-to hover:underline">
-            you@example.com
+          <a href="mailto:610864358@qq.com" className="text-accent-to hover:underline">
+            610864358@qq.com
           </a>
         </li>
         <li>
           GitHub：
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-accent-to hover:underline">
-            github.com/yourname
+          <a href="https://github.com/wuxingxing8912/" target="_blank" rel="noopener noreferrer" className="text-accent-to hover:underline">
+            github.com/wuxingxing8912
           </a>
         </li>
       </ul>

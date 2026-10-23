@@ -11,10 +11,18 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    name: '示例项目 A',
-    screenshot: 'https://via.placeholder.com/400x160',
-    description: '这是一个示例项目的简短描述。',
+    name: '记账应用',
+    screenshot: '/src/assets/images/project_cashbook.png',
+    description: '一个简单易用的个人记账应用。',
     techStack: ['React', 'TypeScript', 'Tailwind'],
-    link: 'https://github.com/',
+    link: 'https://github.com/wuxingxing8912/CashBook',
+  },
+  {
+    id: '2',
+    name: '个人作品集',
+    screenshot: '/src/assets/images/project_portfolio.png',
+    description: '个人作品集网站。',
+    techStack: ['React', 'TypeScript', 'Tailwind'],
+    link: 'https://github.com/wuxingxing8912/Portfolio',
   },
 ]
