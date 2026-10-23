@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="mx-auto max-w-5xl px-6 py-24">
       <h2 className="mb-8 text-3xl font-bold">关于我</h2>
       <p className="mb-12 max-w-2xl text-white/70">
-        这里填写你的个人介绍。保持简洁、突出你的核心能力与经历。
+        程序员，全栈工程师，Vibe Coding实践中
       </p>
       <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">
         {skills.map((skill) => (
