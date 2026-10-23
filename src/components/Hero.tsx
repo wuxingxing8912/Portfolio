@@ -14,7 +14,7 @@ interface HeroProps {
 
 export default function Hero({
   avatarSrc = avatarImage,
-  name = '你好，我是 XXX',
+  name = '你好，我是 老牛',
   intro = '一名开发者，专注于构建简洁、现代且流畅的 Web 体验。',
 }: HeroProps) {
   return (
