@@ -11,10 +11,14 @@ export default function Projects() {
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          // group：用于子元素在卡片悬停时联动
-          <article
+          // 整张卡片作为链接：点击任意区域均可跳转（group 用于子元素在卡片悬停时联动）
+          <a
             key={project.id}
-            className="group overflow-hidden rounded-2xl border border-white/10 bg-surface transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_10px_40px_-10px_rgba(99,102,241,0.5)]"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`查看项目：${project.name}`}
+            className="group block overflow-hidden rounded-2xl border border-white/10 bg-surface transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_10px_40px_-10px_rgba(99,102,241,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-to"
           >
             {/* 项目截图：懒加载 + 悬停缩放 */}
             <div className="overflow-hidden">
@@ -47,17 +51,12 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* 项目链接（可点击） */}
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-accent-to transition-colors hover:text-accent-from"
-              >
+              {/* 跳转提示：整张卡片已是链接，此处用 span 避免嵌套 a 标签 */}
+              <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-accent-to transition-colors group-hover:text-accent-from">
                 查看项目 →
-              </a>
+              </span>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>
